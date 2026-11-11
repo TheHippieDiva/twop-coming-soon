@@ -5,7 +5,7 @@ Reads the TWOP YouTube feed + both hosts' blog feeds, keeps everything ever seen
 Newest on top, Ep 1 at the bottom: a new upload lands on top by itself.
 Hand-written extras (episode summaries, infographics, which Shorts belong to which episode) live in data/episodes.json.
 Run locally: python3 build/build_site.py [site_root]   (no network = builds from the archive)
-House rules: equal credit for both hosts; no FloofieButts, no kids' site, nothing private ever fed in here."""
+House rules: co-owned show, equal credit; it never promotes either host's other properties (one personal blog link each, same weight)."""
 import html, json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -18,11 +18,7 @@ BLOGS = [  # equal credit: same number of posts from each host
   dict(author="Dawn", name="Dawn on Substack", home="https://thehippiediva.substack.com", feed="https://thehippiediva.substack.com/feed"),
 ]
 POSTS_EACH = 3
-SISTERS = [  # reciprocity: sites that feed each other. NEVER FloofieButts or the kids' site.
-  ("debrantes.com", "https://debrantes.com", "Home base for every de Brantes project, all in one place."),
-  ("thehippiediva.com", "https://thehippiediva.com", "Dawn's music, videos, homestead and writing."),
-  ("Sabrena Morgan", "https://sabrena-morgan-missouri.medium.com", "Sabrena's blog: no sugar coating, no victim mentality."),
-]
+# TWOP is co-owned: it links OUT to nobody's other properties (Dawn 11 Nov). Other sites may link TO TWOP.
 HOSTS = "with Sabrena Morgan &amp; Dawn de Brantes"
 FOOT = "Our own experiences and opinions. Not legal advice. Adult topics and strong language. Take care of yourself."
 UA = {"User-Agent": "Mozilla/5.0 (twowomenoneprison.com site builder)"}
@@ -184,10 +180,6 @@ def posts_block(arc, root=""):
         cols += f'<div class="card blog"><h3>{esc(b["name"])}</h3>{items}<div class="links"><a href="{b["home"]}">Read more from {b["author"]}</a></div></div>'
     return f'<section id="blogs"><h2>From our blogs</h2><p class="muted">Newest on top. Updates by itself.</p><div class="grid2">{cols}</div></section>'
 
-def sisters_block():
-    cards = "".join(f'<div class="card"><h3>{esc(n)}</h3><p>{esc(d)}</p><div class="links"><a href="{u}">Visit {esc(n)}</a></div></div>' for n, u, d in SISTERS)
-    return f'<section id="family"><h2>Our other homes</h2><div class="grid2">{cards}</div></section>'
-
 def page(title, desc, body, root=""):
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -205,7 +197,7 @@ def page(title, desc, body, root=""):
 {body}
 </main>
 <footer><div class="wrap"><p class="hosts">Two Women One Prison, {HOSTS}</p><p>{FOOT}</p>
-<p><a href="https://www.youtube.com/@TwoWomenOnePrison">Two Women One Prison on YouTube</a> · <a href="https://debrantes.com">debrantes.com</a> · <a href="https://thehippiediva.com">thehippiediva.com</a></p><p class="label">Updated {UPDATED}</p></div></footer>
+<p><a href="https://www.youtube.com/@TwoWomenOnePrison">Two Women One Prison on YouTube</a></p><p class="label">Updated {UPDATED}</p></div></footer>
 </body></html>
 """
 
@@ -272,10 +264,10 @@ def index(EPS, COMING, arc):
         coming += f'<div class="card"><div class="label">Coming</div><h3>{esc(t)}</h3><p>{esc(d)}</p>{img}</div>'
     hosts = (host("Sabrena Morgan",
                   "Sabrena started blogging from inside a federal prison and came home writing the way she talks: no sugar coating, no victim mentality, no waiting for anybody's validation. Years out now, she lives life on her own terms, and still can't leave a room without saying “when I was in prison.”",
-                  [("YouTube · @Thesabrenamorgan","https://www.youtube.com/@Thesabrenamorgan"),("Instagram · @thesabrenamorgan","https://www.instagram.com/thesabrenamorgan"),("TikTok · @sabrenamorgan","https://www.tiktok.com/@sabrenamorgan"),("Facebook","https://www.facebook.com/sabrena.morgan.2025"),("Blog on Medium","https://sabrena-morgan-missouri.medium.com")])
+                  [("Sabrena's blog on Medium","https://sabrena-morgan-missouri.medium.com")])
            + host("Dawn de Brantes",
                   "Dawn, The Hippie Diva, did her time and came home to rebuild from the dirt up. Today she's a homesteader, songwriter and self-taught AI nerd, making music about walking out of every kind of prison. She calls herself a Gen ex-con: suspicious, tinfoil hat and all, and done apologizing for it.",
-                  [("YouTube · @TheHippieDiva","https://www.youtube.com/@TheHippieDiva"),("Instagram · @thehippiediva","https://www.instagram.com/thehippiediva"),("TikTok · @thehippiediva","https://www.tiktok.com/@thehippiediva"),("Facebook","https://www.facebook.com/TheHippieDiva"),("Blog on Substack","https://thehippiediva.substack.com")]))
+                  [("Dawn's blog on Substack","https://thehippiediva.substack.com")]))
     body = f"""<section class="hero"><img src="img/header.jpg" alt="Two Women One Prison" width="1546" height="423">
 <p class="hosts">{HOSTS}</p>
 <h1>Real talk for adults going in, coming out, and the families who love them.</h1>
@@ -304,9 +296,7 @@ def index(EPS, COMING, arc):
 <section id="resources"><h2>Free resources</h2>
 <div class="card"><h3>Federal prison commissary lists</h3><p>Every BOP facility in one searchable list, with item prices for 46 of them. Free.</p>
 <div class="links"><a href="commissary/index.html">Open the commissary lists</a></div></div>
-</section>
-
-{sisters_block()}"""
+</section>"""
     return page("Two Women One Prison",
                 "Real talk about federal prison and coming home, with Sabrena Morgan and Dawn de Brantes. Every episode, Shorts and free resources.", body)
 

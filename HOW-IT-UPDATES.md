@@ -26,9 +26,12 @@ Why this and not live loading in the visitor's browser:
   - Edit it and push; the Action rebuilds.
 - `data/archive.json` remembers every video and post ever seen. The YouTube feed only shows the newest 15, so older episodes never drop off.
 
-## Sister sites (reciprocity)
-- These feed and link each other: debrantes.com, thehippiediva.com, and Sabrena's links.
-- NEVER linked or fed here: FloofieButts, the kids' site, anything private.
+## Co-owned: nothing promoted out (Dawn, 11 Nov)
+TWOP belongs to both hosts, so it never promotes either host's other properties.
+- Each host card has exactly one personal link, the same weight: Sabrena's Medium blog and Dawn's Substack.
+- "From our blogs" shows the same number of posts from each host.
+- No links to debrantes.com, thehippiediva.com, Homesteader Labs, FloofieButts or the kids' site.
+- Other sites may link TO TWOP (one way).
 
 ## Notes
 - GitHub pauses scheduled Actions on a repo with no activity for 60 days. The bot's own commits count as activity while episodes keep coming. If it ever pauses, click "Enable workflow" in the Actions tab.
