@@ -1,0 +1,101 @@
+{
+ "episodes": {
+  "3F6BRK3T-Kc": {
+   "n": 6,
+   "slug": "ep6-suck-it-up-buttercup",
+   "mins": "49 min",
+   "summary": [
+    "Straight advice for anyone about to self-surrender, especially on a short sentence. Don't cry in the halls: the women around you are doing decades. Cry in the shower or on the track.",
+    "Get your house in order before you go: end-of-life planning, a power of attorney, and teaching your kids to live without you. Then how to do your time: watch before you latch on, read, sleep, work out, make a few real friends, and put the anger down. Dawn's new name for herself: a Gen ex-con."
+   ],
+   "shorts": [],
+   "shorts_note": "Shorts from this episode are coming this week.",
+   "infographic": null
+  },
+  "S6YyLBvsy5g": {
+   "n": 5,
+   "slug": "ep5-pretrial-plane-crash",
+   "mins": "38 min",
+   "summary": [
+    "The mistakes we made between getting indicted and walking in. Hanging on to the old you instead of mourning her. Believing everyone who said “you won't go.” With the feds, you're going.",
+    "Get off the meds they won't give you inside before you go, and get your family ready for everything you used to handle. What kept us steady while we waited: water, the gym, journaling, music. Nobody's coming to save you, but nobody's coming to stop you either."
+   ],
+   "shorts": [],
+   "infographic": "TW1P_Ep5_infographic_v1.png"
+  },
+  "_9IwPUCbgEE": {
+   "n": 4,
+   "slug": "ep4-what-saved-us",
+   "mins": "45 min",
+   "guest": "Amanda",
+   "summary": [
+    "Three women on what actually got us through. Mail call and the people on the outside. Three-minute phone calls rationed across the month. Books, journaling by hand, music on an MP3 player that cost more than it should.",
+    "And laughing. We never laughed so hard in our lives, and we were sober. For families: blunt advice on what to put on the books, and why staying connected is the whole game."
+   ],
+   "shorts": [],
+   "infographic": "TW1P_Ep4_infographic_v1.png",
+   "recap": "../recaps/2026-10-19.html"
+  },
+  "W8geGSmoy3Q": {
+   "n": 3,
+   "slug": "ep3-halfway-houses",
+   "mins": "63 min",
+   "summary": [
+    "How halfway houses actually work, and don't: the Second Chance Act, the First Step Act, CARES Act home confinement, and why nobody inside prepares you for any of it.",
+    "Then advocating for yourself without getting sent back, the meds that almost violated Dawn, the night they said the Marshals were coming, and what freedom tastes like on the other side. Nobody is going to handle it for you."
+   ],
+   "shorts": [
+    "R1e9EnUkhlk",
+    "aT1Y_jluQ9o",
+    "02H1JO3hiGE",
+    "PDxXul1BxnE",
+    "jAtzkCWeY-M",
+    "h8tqKPQ3pKk",
+    "AeE0yA642eE",
+    "JHTV1o_mUCk"
+   ],
+   "infographic": "TW1P_Ep3_infographic_v1.png"
+  },
+  "V04iB3V0aLM": {
+   "n": 2,
+   "slug": "ep2-first-place-i-felt-safe",
+   "mins": "59 min",
+   "summary": [
+    "Same prison, two very different times. For a lot of women the trauma started long before the handcuffs, and a locked door was the first quiet they ever had.",
+    "What a women's camp is really like (a bad boarding school that had a baby with a nursing home), why staff match the energy you bring, and for families: if your person needs earplugs and a wall when they get home, that's okay too."
+   ],
+   "shorts": [
+    "3uqdHuqc_i4",
+    "pDpycXHiLbA"
+   ],
+   "infographic": "TW1P_Ep2_infographic_v1.png"
+  },
+  "8EcRI-LmExQ": {
+   "n": 1,
+   "slug": "ep1-didnt-see-the-moon",
+   "mins": "48 min",
+   "age_gate": true,
+   "summary": [
+    "Prison takes the little things first. Sabrena went more than a year without seeing the moon.",
+    "Christmas with nothing but each other and some paper and tape, birthday cheesecakes for strangers, losing your mask, ten minutes a day on the phone with the one who stayed. This isn't a sad story: the worst day of your life doesn't have to define the rest of it."
+   ],
+   "shorts": [
+    "WACwbpw1VAk",
+    "1YFpvwUGoYY"
+   ],
+   "infographic": "TW1P_Ep1_infographic_v1.png"
+  }
+ },
+ "coming": [
+  {
+   "title": "Locked Down, Priced Out",
+   "text": "Federal prison during COVID, and what the lockdown taught prisons they could get away with. Plus commissary: pay stayed the same, prices didn't.",
+   "commissary_infographic": true
+  },
+  {
+   "title": "Re-entry Is a Fairy Tale",
+   "text": "“Re-entry” sounds like a destination. It's really a new sentence with no expiration date. Why we want a real path to federal expungement.",
+   "commissary_infographic": false
+  }
+ ]
+}

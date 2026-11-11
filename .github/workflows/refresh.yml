@@ -1,0 +1,32 @@
+# Auto-feed for twowomenoneprison.com (free on a public repo).
+# Every 3 hours: read the TWOP YouTube feed + Sabrena's and Dawn's blog feeds, rebuild the pages,
+# commit only if something changed. GitHub Pages then republishes the site from main by itself.
+name: Refresh site from feeds
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["build/**", "data/episodes.json"]
+permissions:
+  contents: write
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build from feeds
+        run: python build/build_site.py .
+      - name: Commit if changed
+        run: |
+          git config user.name "twop-site-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A index.html episodes data/archive.json
+          git diff --cached --quiet || (git commit -m "Auto-refresh from feeds" && git push)
