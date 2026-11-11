@@ -1,39 +1,158 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Two Women One Prison: coming soon</title>
-<meta name="description" content="Two Women One Prison, with Sabrena Morgan and Dawn de Brantes. Coming soon.">
-<meta property="og:title" content="Two Women One Prison">
-<meta property="og:description" content="With Sabrena Morgan and Dawn de Brantes. Coming soon.">
-<meta property="og:image" content="logo.jpg">
-<link rel="icon" href="logo.jpg">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Two Women One Prison</title>
+<meta name="description" content="Real talk about federal prison and coming home, with Sabrena Morgan and Dawn de Brantes. Every episode, Shorts and free resources.">
+<meta name="theme-color" content="#fbf7f4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#2b2b2b" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Two Women One Prison"><meta property="og:description" content="Real talk about federal prison and coming home, with Sabrena Morgan and Dawn de Brantes. Every episode, Shorts and free resources."><meta property="og:image" content="https://twowomenoneprison.com/img/header.jpg">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0e0d0c; --cream:#f1ebdf; --orange:#e08a3c; --muted:#9a9186; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  html, body { height:100%; }
-  body {
-    background: radial-gradient(ellipse at 50% 30%, #2a221b 0%, var(--bg) 70%);
-    color: var(--cream);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    min-height:100vh; display:flex; flex-direction:column; align-items:center;
-  }
-  header { width:100%; }
-  header img { display:block; width:100%; height:auto; max-height:60vh; object-fit:cover; }
-  main { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:48px 16px; text-align:center; }
-  h1 { font-size: clamp(2rem, 7vw, 4rem); letter-spacing:.18em; text-transform:uppercase; font-weight:800; }
-  h1 span { color: var(--orange); }
-  .hosts { margin-top:20px; font-size:clamp(1.05rem, 3.6vw, 1.5rem); letter-spacing:.04em; }
-  footer { padding:24px 16px; color:var(--muted); font-size:.85rem; }
-</style>
-</head>
-<body>
-  <header><img src="header.jpg" alt="Two Women One Prison"></header>
-  <main>
-    <h1>Coming <span>soon</span></h1>
-    <p class="hosts">with Sabrena Morgan &amp; Dawn de Brantes</p>
-  </main>
-  <footer>twowomenoneprison.com</footer>
-</body>
-</html>
+:root{--bg:#fbf7f4;--card:#f4ede7;--ink:#2a2026;--head:#4f2445;--accent:#a85a1c;--muted:#6b5d63;--line:#e2d8d0;--onaccent:#fbf7f4;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#2b2b2b;--card:#353535;--ink:#eee6dc;--head:#eee6dc;--accent:#d49066;--muted:#c4bcb3;--line:#4a4a4a;--onaccent:#2b2b2b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2b2b2b;--card:#353535;--ink:#eee6dc;--head:#eee6dc;--accent:#d49066;--muted:#c4bcb3;--line:#4a4a4a;--onaccent:#2b2b2b;color-scheme:dark}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 'Josefin Sans',system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-underline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--card);padding:10px;z-index:9}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;padding-top:6px;padding-bottom:6px}
+.brand{font-family:'Archivo Black',Impact,sans-serif;font-size:19px;letter-spacing:.3px;color:var(--head);text-decoration:none;min-height:44px;display:flex;align-items:center}
+.brand span{color:var(--accent)}
+nav.top{display:flex;flex-wrap:wrap;gap:0 4px}
+nav.top a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;font-weight:600;color:var(--ink)}
+nav.top a:hover{color:var(--accent)}
+h1,h2,h3{font-family:'Archivo Black',Impact,sans-serif;font-weight:400;color:var(--head);line-height:1.15;letter-spacing:.2px}
+h1{font-size:clamp(28px,6vw,44px);margin:20px 0 8px}
+h2{font-size:clamp(24px,4.5vw,32px);margin:44px 0 12px}
+h3{font-size:21px;margin:0 0 6px}
+.label{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+.hero img{width:100%;border-radius:10px;margin-top:16px}
+.hero .hosts{font-size:clamp(18px,3.4vw,22px);font-weight:600;margin:14px 0 0;color:var(--head)}
+.lede{font-size:20px;max-width:46em}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:99px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--onaccent)}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.vid{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:#1d1b1c;margin:12px 0}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ep{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:16px;margin:16px 0}
+.ep .thumb{display:block;border-radius:8px;overflow:hidden;aspect-ratio:16/9;background:var(--line)}
+.ep .thumb img{width:100%;height:100%;object-fit:cover}
+.ep h3 a{color:var(--head);text-decoration:none}.ep h3 a:hover{color:var(--accent)}
+.ep p{margin:6px 0}
+.ep>*{min-width:0}
+.ep h3 a,#newest h3 a{display:inline-block;min-height:44px;padding:4px 0}
+.btnlink,footer a{display:inline-flex;align-items:center;min-height:44px}
+.more{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.shorts{grid-column:1/-1}
+.srow{display:flex;gap:10px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.srow a{flex:0 0 132px;scroll-snap-align:start;text-decoration:none;color:var(--ink);font-size:14px;line-height:1.3}
+.srow .v{aspect-ratio:9/16;border-radius:8px;overflow:hidden;background:var(--line);margin-bottom:6px}
+.srow .v img{width:100%;height:100%;object-fit:cover}
+.note{border:1.5px dashed var(--accent);border-radius:10px;padding:10px 14px;color:var(--muted);margin:8px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.hostcard p{margin:6px 0 10px}
+.links a{display:flex;align-items:center;min-height:44px;border-top:1px solid var(--line);text-decoration:none;font-weight:600}
+.coming .card{display:flex;flex-direction:column}
+.coming img{border-radius:8px;margin-top:10px;max-height:420px;object-fit:cover;object-position:top}
+.infog{width:100%;max-width:min(100%,540px);margin:12px 0;border-radius:10px;border:1px solid var(--line)}
+.print-url{display:none}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:20px 0 40px;color:var(--muted);font-size:16px}
+footer .hosts{color:var(--head);font-weight:600}
+.crumbs{margin:16px 0 0}.crumbs a{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:640px){.ep{grid-template-columns:minmax(0,1fr)}body{font-size:17px}.lede{font-size:18px}}
+@media print{
+ :root,:root[data-theme="dark"]{--bg:#fff;--card:#fff;--ink:#000;--head:#000;--accent:#000;--muted:#333;--line:#999}
+ body{background:#fff;color:#000;font-size:12pt}
+ .vid,nav.top,.btns,.btn,.srow,.skip,.more,.crumbs{display:none!important}
+ .print-url{display:inline;font-family:'IBM Plex Mono',monospace;font-size:9pt;font-weight:400}
+ .card{border:1px solid #999;break-inside:avoid}
+ .ep{grid-template-columns:1fr}.ep .thumb{display:none}
+ a{color:#000}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">TWO WOMEN&nbsp;<span>ONE PRISON</span></a>
+<nav class="top" aria-label="Main"><a href="index.html#episodes">Episodes</a><a href="index.html#coming">Coming up</a><a href="index.html#hosts">Hosts</a><a href="commissary/index.html">Commissary lists</a></nav></div></header>
+<main id="main" class="wrap">
+<section class="hero"><img src="img/header.jpg" alt="Two Women One Prison" width="1546" height="423">
+<p class="hosts">with Sabrena Morgan &amp; Dawn de Brantes</p>
+<h1>Real talk for adults going in, coming out, and the families who love them.</h1>
+<p class="lede">We met serving time in federal prison. Pretrial, prison, halfway houses, home confinement, supervision: we've lived it, and we talk about it straight.</p>
+<div class="btns"><a class="btn" href="https://www.youtube.com/@TwoWomenOnePrison?sub_confirmation=1">Subscribe on YouTube</a><a class="btn ghost" href="#episodes">All episodes</a></div>
+</section>
+
+<section id="newest"><h2>Newest episode</h2>
+<div class="label">EP 6 · NOV 11 · 49 min</div>
+<h3><a href="episodes/ep6-suck-it-up-buttercup.html" style="color:var(--head);text-decoration:none">Suck It Up, Buttercup: Before You Self-Surrender to Federal Prison</a> <span class="print-url">https://www.youtube.com/watch?v=3F6BRK3T-Kc</span></h3>
+<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/3F6BRK3T-Kc" title="Suck It Up, Buttercup: Before You Self-Surrender to Federal Prison" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+</section>
+
+<section id="episodes"><h2>Every episode</h2>
+<p class="muted">Newest first. New episodes Wednesdays. Shorts sit under the episode they came from.</p>
+<article class="card ep" id="ep6-suck-it-up-buttercup">
+<a class="thumb" href="episodes/ep6-suck-it-up-buttercup.html" aria-label="Suck It Up, Buttercup: Before You Self-Surrender to Federal Prison"><img src="https://i.ytimg.com/vi/3F6BRK3T-Kc/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 6 · NOV 11 · 49 min</div>
+<h3><a href="episodes/ep6-suck-it-up-buttercup.html">Suck It Up, Buttercup: Before You Self-Surrender to Federal Prison</a> <span class="print-url">https://www.youtube.com/watch?v=3F6BRK3T-Kc</span></h3>
+<p>Straight advice for anyone about to self-surrender, especially on a short sentence. Don&#x27;t cry in the halls: the women around you are doing decades. Cry in the shower or on the track.</p>
+<a class="more" href="episodes/ep6-suck-it-up-buttercup.html">Watch + read more</a></div>
+<div class="shorts"><p class="note">Shorts from this episode are coming this week.</p></div>
+</article>
+<article class="card ep" id="ep5-pretrial-plane-crash">
+<a class="thumb" href="episodes/ep5-pretrial-plane-crash.html" aria-label="Pretrial Is the Longest Plane Crash of Your Life"><img src="https://i.ytimg.com/vi/S6YyLBvsy5g/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 5 · OCT 28 · 38 min</div>
+<h3><a href="episodes/ep5-pretrial-plane-crash.html">Pretrial Is the Longest Plane Crash of Your Life</a> <span class="print-url">https://www.youtube.com/watch?v=S6YyLBvsy5g</span></h3>
+<p>The mistakes we made between getting indicted and walking in. Hanging on to the old you instead of mourning her. Believing everyone who said “you won&#x27;t go.” With the feds, you&#x27;re going.</p>
+<a class="more" href="episodes/ep5-pretrial-plane-crash.html">Watch + read more</a></div>
+
+</article>
+<article class="card ep" id="ep4-what-saved-us">
+<a class="thumb" href="episodes/ep4-what-saved-us.html" aria-label="What Actually Saved Us in Prison (It&#x27;s Not What You Think)"><img src="https://i.ytimg.com/vi/_9IwPUCbgEE/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 4 · OCT 21 · 45 min · with Amanda</div>
+<h3><a href="episodes/ep4-what-saved-us.html">What Actually Saved Us in Prison (It&#x27;s Not What You Think)</a> <span class="print-url">https://www.youtube.com/watch?v=_9IwPUCbgEE</span></h3>
+<p>Three women on what actually got us through. Mail call and the people on the outside. Three-minute phone calls rationed across the month. Books, journaling by hand, music on an MP3 player that cost more than it should.</p>
+<a class="more" href="episodes/ep4-what-saved-us.html">Watch + read more</a></div>
+
+</article>
+<article class="card ep" id="ep3-halfway-houses">
+<a class="thumb" href="episodes/ep3-halfway-houses.html" aria-label="Halfway Houses: What Nobody Tells You Before You Get Out"><img src="https://i.ytimg.com/vi/W8geGSmoy3Q/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 3 · OCT 14 · 63 min</div>
+<h3><a href="episodes/ep3-halfway-houses.html">Halfway Houses: What Nobody Tells You Before You Get Out</a> <span class="print-url">https://www.youtube.com/watch?v=W8geGSmoy3Q</span></h3>
+<p>How halfway houses actually work, and don&#x27;t: the Second Chance Act, the First Step Act, CARES Act home confinement, and why nobody inside prepares you for any of it.</p>
+<a class="more" href="episodes/ep3-halfway-houses.html">Watch + read more</a></div>
+<div class="shorts"><div class="label">Shorts from this episode</div><div class="srow"><a href="https://www.youtube.com/shorts/R1e9EnUkhlk"><div class="v"><img src="https://i.ytimg.com/vi/R1e9EnUkhlk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Advocating for Yourself IS NOT Being Combative</a><a href="https://www.youtube.com/shorts/aT1Y_jluQ9o"><div class="v"><img src="https://i.ytimg.com/vi/aT1Y_jluQ9o/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>My ADHD Meds Almost Sent Me Back to Prison</a><a href="https://www.youtube.com/shorts/02H1JO3hiGE"><div class="v"><img src="https://i.ytimg.com/vi/02H1JO3hiGE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>A Halfway House Is Like a McDonald&#x27;s</a><a href="https://www.youtube.com/shorts/PDxXul1BxnE"><div class="v"><img src="https://i.ytimg.com/vi/PDxXul1BxnE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>The Marshals Were Coming on My Daughter&#x27;s Wedding Night</a><a href="https://www.youtube.com/shorts/jAtzkCWeY-M"><div class="v"><img src="https://i.ytimg.com/vi/jAtzkCWeY-M/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Nobody Is Going to Handle It for You</a><a href="https://www.youtube.com/shorts/h8tqKPQ3pKk"><div class="v"><img src="https://i.ytimg.com/vi/h8tqKPQ3pKk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Prison IS a Community. Then You Lose It.</a><a href="https://www.youtube.com/shorts/AeE0yA642eE"><div class="v"><img src="https://i.ytimg.com/vi/AeE0yA642eE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>A Chain. A Door. A Flashlight.</a><a href="https://www.youtube.com/shorts/JHTV1o_mUCk"><div class="v"><img src="https://i.ytimg.com/vi/JHTV1o_mUCk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Lower Your Expectations of People</a></div></div>
+</article>
+<article class="card ep" id="ep2-first-place-i-felt-safe">
+<a class="thumb" href="episodes/ep2-first-place-i-felt-safe.html" aria-label="Prison Was the First Place I Ever Felt Safe"><img src="https://i.ytimg.com/vi/V04iB3V0aLM/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 2 · SEP 26 · 59 min</div>
+<h3><a href="episodes/ep2-first-place-i-felt-safe.html">Prison Was the First Place I Ever Felt Safe</a> <span class="print-url">https://www.youtube.com/watch?v=V04iB3V0aLM</span></h3>
+<p>Same prison, two very different times. For a lot of women the trauma started long before the handcuffs, and a locked door was the first quiet they ever had.</p>
+<a class="more" href="episodes/ep2-first-place-i-felt-safe.html">Watch + read more</a></div>
+<div class="shorts"><div class="label">Shorts from this episode</div><div class="srow"><a href="https://www.youtube.com/shorts/3uqdHuqc_i4"><div class="v"><img src="https://i.ytimg.com/vi/3uqdHuqc_i4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Prison Was the First Place I Ever Felt Safe</a><a href="https://www.youtube.com/shorts/pDpycXHiLbA"><div class="v"><img src="https://i.ytimg.com/vi/pDpycXHiLbA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Women&#x27;s Prison Camp, Explained in One Sentence</a></div></div>
+</article>
+<article class="card ep" id="ep1-didnt-see-the-moon">
+<a class="thumb" href="episodes/ep1-didnt-see-the-moon.html" aria-label="I Didn&#x27;t See the Moon for a Year (Federal Prison)"><img src="https://i.ytimg.com/vi/8EcRI-LmExQ/mqdefault.jpg" alt="" loading="lazy" width="320" height="180"></a>
+<div><div class="label">EP 1 · SEP 20 · 48 min</div>
+<h3><a href="episodes/ep1-didnt-see-the-moon.html">I Didn&#x27;t See the Moon for a Year (Federal Prison)</a> <span class="print-url">https://www.youtube.com/watch?v=8EcRI-LmExQ</span></h3>
+<p>Prison takes the little things first. Sabrena went more than a year without seeing the moon.</p>
+<a class="more" href="episodes/ep1-didnt-see-the-moon.html">Watch + read more</a></div>
+<div class="shorts"><div class="label">Shorts from this episode</div><div class="srow"><a href="https://www.youtube.com/shorts/WACwbpw1VAk"><div class="v"><img src="https://i.ytimg.com/vi/WACwbpw1VAk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>I Didn&#x27;t See the Moon for a Year</a><a href="https://www.youtube.com/shorts/1YFpvwUGoYY"><div class="v"><img src="https://i.ytimg.com/vi/1YFpvwUGoYY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Christmas in Prison: Nothing But Each Other</a></div></div>
+</article>
+<p><a class="more" href="https://www.youtube.com/@TwoWomenOnePrison/shorts">All Shorts on YouTube</a></p>
+</section>
+
+<section id="coming" class="coming"><h2>Coming up</h2><div class="grid2"><div class="card"><div class="label">Coming</div><h3>Locked Down, Priced Out</h3><p>Federal prison during COVID, and what the lockdown taught prisons they could get away with. Plus commissary: pay stayed the same, prices didn&#x27;t.</p><a href="commissary/index.html"><img src="commissary/TWOP_commissary-infographic_v1.png" alt="Infographic: prison pay stayed the same, commissary prices did not" loading="lazy"></a></div><div class="card"><div class="label">Coming</div><h3>Re-entry Is a Fairy Tale</h3><p>“Re-entry” sounds like a destination. It&#x27;s really a new sentence with no expiration date. Why we want a real path to federal expungement.</p></div></div></section>
+
+<section id="hosts"><h2>Your hosts</h2><div class="grid2"><div class="card hostcard"><h3>Sabrena Morgan</h3><p>Sabrena started blogging from inside a federal prison and came home writing the way she talks: no sugar coating, no victim mentality, no waiting for anybody&#x27;s validation. Years out now, she lives life on her own terms, and still can&#x27;t leave a room without saying “when I was in prison.”</p><div class="links"><a href="https://www.youtube.com/@Thesabrenamorgan">YouTube · @Thesabrenamorgan</a><a href="https://www.instagram.com/thesabrenamorgan">Instagram · @thesabrenamorgan</a><a href="https://www.tiktok.com/@sabrenamorgan">TikTok · @sabrenamorgan</a><a href="https://www.facebook.com/sabrena.morgan.2025">Facebook</a><a href="https://sabrena-morgan-missouri.medium.com">Blog on Medium</a></div></div><div class="card hostcard"><h3>Dawn de Brantes</h3><p>Dawn, The Hippie Diva, did her time and came home to rebuild from the dirt up. Today she&#x27;s a homesteader, songwriter and self-taught AI nerd, making music about walking out of every kind of prison. She calls herself a Gen ex-con: suspicious, tinfoil hat and all, and done apologizing for it.</p><div class="links"><a href="https://www.youtube.com/@TheHippieDiva">YouTube · @TheHippieDiva</a><a href="https://www.instagram.com/thehippiediva">Instagram · @thehippiediva</a><a href="https://www.tiktok.com/@thehippiediva">TikTok · @thehippiediva</a><a href="https://www.facebook.com/TheHippieDiva">Facebook</a><a href="https://thehippiediva.substack.com">Blog on Substack</a></div></div></div></section>
+
+<section id="resources"><h2>Free resources</h2>
+<div class="card"><h3>Federal prison commissary lists</h3><p>Every BOP facility in one searchable list, with item prices for 46 of them, plus plain-English tips for families. Free.</p>
+<div class="links"><a href="commissary/index.html">Open the commissary lists</a></div></div>
+</section>
+</main>
+<footer><div class="wrap"><p class="hosts">Two Women One Prison, with Sabrena Morgan &amp; Dawn de Brantes</p><p>Our own experiences and opinions. Not legal advice. Adult topics and strong language. Take care of yourself.</p>
+<p><a href="https://www.youtube.com/@TwoWomenOnePrison">Two Women One Prison on YouTube</a></p></div></footer>
+</body></html>

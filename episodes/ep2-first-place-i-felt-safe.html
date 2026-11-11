@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ep 2 · Two Women One Prison</title>
+<meta name="description" content="Same prison, two very different times. For a lot of women the trauma started long before the handcuffs, and a locked door was the first quiet they ever had.">
+<meta name="theme-color" content="#fbf7f4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#2b2b2b" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Two Women One Prison"><meta property="og:description" content="Same prison, two very different times. For a lot of women the trauma started long before the handcuffs, and a locked door was the first quiet they ever had."><meta property="og:image" content="https://twowomenoneprison.com/img/header.jpg">
+<link rel="icon" href="../img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7f4;--card:#f4ede7;--ink:#2a2026;--head:#4f2445;--accent:#a85a1c;--muted:#6b5d63;--line:#e2d8d0;--onaccent:#fbf7f4;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#2b2b2b;--card:#353535;--ink:#eee6dc;--head:#eee6dc;--accent:#d49066;--muted:#c4bcb3;--line:#4a4a4a;--onaccent:#2b2b2b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2b2b2b;--card:#353535;--ink:#eee6dc;--head:#eee6dc;--accent:#d49066;--muted:#c4bcb3;--line:#4a4a4a;--onaccent:#2b2b2b;color-scheme:dark}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 'Josefin Sans',system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-underline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--card);padding:10px;z-index:9}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;padding-top:6px;padding-bottom:6px}
+.brand{font-family:'Archivo Black',Impact,sans-serif;font-size:19px;letter-spacing:.3px;color:var(--head);text-decoration:none;min-height:44px;display:flex;align-items:center}
+.brand span{color:var(--accent)}
+nav.top{display:flex;flex-wrap:wrap;gap:0 4px}
+nav.top a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;text-decoration:none;font-weight:600;color:var(--ink)}
+nav.top a:hover{color:var(--accent)}
+h1,h2,h3{font-family:'Archivo Black',Impact,sans-serif;font-weight:400;color:var(--head);line-height:1.15;letter-spacing:.2px}
+h1{font-size:clamp(28px,6vw,44px);margin:20px 0 8px}
+h2{font-size:clamp(24px,4.5vw,32px);margin:44px 0 12px}
+h3{font-size:21px;margin:0 0 6px}
+.label{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+.hero img{width:100%;border-radius:10px;margin-top:16px}
+.hero .hosts{font-size:clamp(18px,3.4vw,22px);font-weight:600;margin:14px 0 0;color:var(--head)}
+.lede{font-size:20px;max-width:46em}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:99px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--onaccent)}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.vid{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:#1d1b1c;margin:12px 0}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ep{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:16px;margin:16px 0}
+.ep .thumb{display:block;border-radius:8px;overflow:hidden;aspect-ratio:16/9;background:var(--line)}
+.ep .thumb img{width:100%;height:100%;object-fit:cover}
+.ep h3 a{color:var(--head);text-decoration:none}.ep h3 a:hover{color:var(--accent)}
+.ep p{margin:6px 0}
+.ep>*{min-width:0}
+.ep h3 a,#newest h3 a{display:inline-block;min-height:44px;padding:4px 0}
+.btnlink,footer a{display:inline-flex;align-items:center;min-height:44px}
+.more{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.shorts{grid-column:1/-1}
+.srow{display:flex;gap:10px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.srow a{flex:0 0 132px;scroll-snap-align:start;text-decoration:none;color:var(--ink);font-size:14px;line-height:1.3}
+.srow .v{aspect-ratio:9/16;border-radius:8px;overflow:hidden;background:var(--line);margin-bottom:6px}
+.srow .v img{width:100%;height:100%;object-fit:cover}
+.note{border:1.5px dashed var(--accent);border-radius:10px;padding:10px 14px;color:var(--muted);margin:8px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.hostcard p{margin:6px 0 10px}
+.links a{display:flex;align-items:center;min-height:44px;border-top:1px solid var(--line);text-decoration:none;font-weight:600}
+.coming .card{display:flex;flex-direction:column}
+.coming img{border-radius:8px;margin-top:10px;max-height:420px;object-fit:cover;object-position:top}
+.infog{width:100%;max-width:min(100%,540px);margin:12px 0;border-radius:10px;border:1px solid var(--line)}
+.print-url{display:none}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:20px 0 40px;color:var(--muted);font-size:16px}
+footer .hosts{color:var(--head);font-weight:600}
+.crumbs{margin:16px 0 0}.crumbs a{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:640px){.ep{grid-template-columns:minmax(0,1fr)}body{font-size:17px}.lede{font-size:18px}}
+@media print{
+ :root,:root[data-theme="dark"]{--bg:#fff;--card:#fff;--ink:#000;--head:#000;--accent:#000;--muted:#333;--line:#999}
+ body{background:#fff;color:#000;font-size:12pt}
+ .vid,nav.top,.btns,.btn,.srow,.skip,.more,.crumbs{display:none!important}
+ .print-url{display:inline;font-family:'IBM Plex Mono',monospace;font-size:9pt;font-weight:400}
+ .card{border:1px solid #999;break-inside:avoid}
+ .ep{grid-template-columns:1fr}.ep .thumb{display:none}
+ a{color:#000}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><a class="brand" href="../index.html">TWO WOMEN&nbsp;<span>ONE PRISON</span></a>
+<nav class="top" aria-label="Main"><a href="../index.html#episodes">Episodes</a><a href="../index.html#coming">Coming up</a><a href="../index.html#hosts">Hosts</a><a href="../commissary/index.html">Commissary lists</a></nav></div></header>
+<main id="main" class="wrap">
+<p class="crumbs"><a href="../index.html#episodes">All episodes</a></p>
+<div class="label">EP 2 · SEP 26 · 59 min</div>
+<h1>Prison Was the First Place I Ever Felt Safe <span class="print-url">https://www.youtube.com/watch?v=V04iB3V0aLM</span></h1>
+<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/V04iB3V0aLM" title="Prison Was the First Place I Ever Felt Safe" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<div class="lede"><p>Same prison, two very different times. For a lot of women the trauma started long before the handcuffs, and a locked door was the first quiet they ever had.</p><p>What a women&#x27;s camp is really like (a bad boarding school that had a baby with a nursing home), why staff match the energy you bring, and for families: if your person needs earplugs and a wall when they get home, that&#x27;s okay too.</p></div>
+<p><a class="btnlink" href="https://www.youtube.com/watch?v=V04iB3V0aLM">Watch on YouTube</a></p>
+
+<h2>Shorts</h2><div class="shorts"><div class="label">Shorts from this episode</div><div class="srow"><a href="https://www.youtube.com/shorts/3uqdHuqc_i4"><div class="v"><img src="https://i.ytimg.com/vi/3uqdHuqc_i4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Prison Was the First Place I Ever Felt Safe</a><a href="https://www.youtube.com/shorts/pDpycXHiLbA"><div class="v"><img src="https://i.ytimg.com/vi/pDpycXHiLbA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"></div>Women&#x27;s Prison Camp, Explained in One Sentence</a></div></div>
+<h2>The numbers</h2><img class="infog" src="../img/infographics/TW1P_Ep2_infographic_v1.png" alt="Infographic for Episode 2" loading="lazy">
+</main>
+<footer><div class="wrap"><p class="hosts">Two Women One Prison, with Sabrena Morgan &amp; Dawn de Brantes</p><p>Our own experiences and opinions. Not legal advice. Adult topics and strong language. Take care of yourself.</p>
+<p><a href="https://www.youtube.com/@TwoWomenOnePrison">Two Women One Prison on YouTube</a></p></div></footer>
+</body></html>
